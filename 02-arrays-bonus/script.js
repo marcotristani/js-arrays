@@ -1,5 +1,7 @@
 const teachers = ["Nathan", "Ed", "Fabio", "Phil", "Carlo", "Lewis", "Luca"]; // NON MODIFICARE QUESTA VARIABILE
 console.log("L'array originale è :", teachers);
+document.getElementById("array-start").innerHTML = `<span class="badge text-bg-warning fs-5">teachers === <span class="text-danger"> [ ${teachers} ]</span></span>`
+
 
 console.log("");
 // 1. Inverti l'ordine degli insegnanti nell'array teachers
@@ -30,6 +32,14 @@ console.log(
   reversedTeachersForUnShift
 );
 
+document.getElementById("Exercise1").innerHTML = `
+<div class="text-bg-secondary"><em><strong>TRACCIA:</strong>Inverti l'ordine degli insegnanti nell'array teachers e salva il risultato nella variabile reversedTeachers </em></div><br>
+<div class="p-3 border">
+<strong>RISULTATO:</strong> reversedTeachers === <span class="text-danger"> [ ${reversedTeachers} ]</span><br>
+ <a href="./img/Esercizio1-bonus.png" class="btn btn-primary m-3">Visualizza Script</a>
+</div>
+`;
+
 console.log("");
 // 2. Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti
 // con un nome di lunghezza maggiore o uguale a 5 caratteri
@@ -43,12 +53,26 @@ console.log(
   "2.L'array longNames contenente i nomi degli insegnanti lunghi almeno 5 caratteri è:",
   longNames
 );
+document.getElementById("Exercise2").innerHTML = `
+<div class="text-bg-secondary"><em><strong>TRACCIA:</strong>Crea un nuovo array chiamato 'longNames' che contenga solo gli insegnanti con un nome di lunghezza maggiore o uguale a 5 caratteri</em></div><br>
+<div class="p-3 border">
+<strong>RISULTATO:</strong> longNames === <span class="text-danger"> [ ${longNames} ]</span><br>
+ <a href="./img/Esercizio2-bonus.png" class="btn btn-primary m-3">Visualizza Script</a>
+</div>
+`;
 
 console.log("");
 // 3. Rimuovi 'Ed' dall'array teachers
 const indexEd = teachers.indexOf("Ed");
 teachers.splice(indexEd, 1);
 console.log("3.Rimosso il nome Ed dall'array:", teachers);
+document.getElementById("Exercise3").innerHTML = `
+<div class="text-bg-secondary"><em><strong>TRACCIA:</strong>Rimuovi 'Ed' dall'array teachers</em></div><br>
+<div class="p-3 border">
+<strong>RISULTATO:</strong> teachers === <span class="text-danger"> [ ${teachers} ]</span><br>
+ <a href="./img/Esercizio3-bonus.png" class="btn btn-primary m-3">Visualizza Script</a>
+</div>
+`;
 
 console.log("");
 // 4. Verifica se 'Fabio' è presente nell'array teachers
@@ -71,6 +95,13 @@ console.log(
   isFabioPresentIf,
   "....(eseguito con la funzione indexOf e condizione di esistenza)"
 );
+document.getElementById("Exercise4").innerHTML = `
+<div class="text-bg-secondary"><em><strong>TRACCIA:</strong>Verifica se 'Fabio' è presente nell'array teachers e salva il risultato nella variabile isFabioPresent</em></div><br>
+<div class="p-3 border">
+<strong>RISULTATO:</strong> isFabioPresent === <span class="text-primary"> ${isFabioPresent} </span><br>
+ <a href="./img/Esercizio4-bonus.png" class="btn btn-primary m-3">Visualizza Script</a> 
+</div>
+`;
 
 console.log("");
 // 5. Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString
@@ -92,3 +123,10 @@ console.log(
   "5.Stringa degli elemnti dell'array ottenuta con ciclo For:",
   teachersStringFor
 );
+document.getElementById("Exercise5").innerHTML = `
+<div class="text-bg-secondary"><em><strong>TRACCIA:</strong>Unisci tutti gli insegnanti nell'array teachers in una stringa  separata da virgole e salvala nella variabile teachersString</em></div><br>
+<div class="p-3 border">
+<strong>RISULTATO:</strong> teachersString === ${teachersString} <br>
+ <a href="./img/Esercizio5-bonus.png" class="btn btn-primary m-3">Visualizza Script</a>
+</div>
+`;
